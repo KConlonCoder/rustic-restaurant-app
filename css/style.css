@@ -1,0 +1,273 @@
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%; /* font-size 62.5% of 16px = 10px, default browser settings */
+  font-weight: normal;
+}
+
+body {
+  font-family: Courier New, Garamond, Georgia, 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  background: burlywood;
+  color: white;
+}
+
+p, .line-height {
+  line-height: 3rem;
+}
+
+nav {
+  padding: 0.5rem;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+} */
+
+h1 {  font-size: 6rem;}
+h2 {  font-size: 4rem;}
+/* h3 {  font-size: 1.872rem;} */
+h4 {  font-size: 2.6rem;}
+/* h5 {  font-size: 1.328rem;} */
+/* h6 {  font-size: 1.072rem;} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  border-bottom: 2px solid #FF452B; /* orangered */
+}
+
+ul, li {
+  list-style: none;
+  /* display: inline; */
+}
+
+.button, .button a {
+  color: white;
+  /* opacity: 80%; */
+  padding: .5rem;
+}
+
+.button-decor {
+  background: orange;
+  color: white;
+  width: 5rem;
+}
+
+h4, 
+strong,
+strong > a {
+  /* color: orangered; */
+  color: #FF452B;
+}
+
+.button, .contrast-bg-color {
+  background: darkgoldenrod;
+}
+
+.logo-font, h1, h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+/******************************************
+/* BACKGROUND STYLES
+/*******************************************/
+
+#welcome {
+  background: white;
+  background-image: url("../images/atmosphere-table.png");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  /* width: fit-content; */
+  /* max-height: 100vh;  */
+  /* min-height: 70vh; */
+  height: 95vh;
+  /* min-width: 50%; */
+  /* font-size: 3rem; */
+  /* padding: auto; */
+  /* text-align: center; */
+}
+
+#welcome * {
+  height: fit-content;
+}
+
+#about {
+  background-image: url("../images/background-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 95vh;
+  padding: 2.5vh;
+}
+
+#about > section {
+  /* background: white; */
+  /* opacity: 10%; */
+  /* linear-gradient(90deg, white, gray, black); */
+  /* background: linear-gradient(to bottom, transparent, black); */
+  background-image: linear-gradient(to bottom, rgba(61,30,2,.7), rgba(0,0,0,.1));
+}
+
+#menu {
+  height: 90vh;
+  padding: 5vh 0;
+  text-align: center;
+  /* background: white;
+  color: black; */
+}
+
+#menu a {
+  /* color: black; */
+}
+
+#menu-breakfast img,
+#menu-lunch img,
+#menu-dinner img,
+#menu-sides img {
+  height: 25vh;
+}
+
+#menu-drinks img {
+  height: 40vh;
+}
+
+#menu-breakfast,
+#menu-lunch,
+#menu-dinner,
+#menu-sides,
+#menu-drinks {
+  display: none;
+}
+
+#menu-breakfast {
+  display: inline;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* body {
+  margin: 1rem;
+} */
+
+/* header {
+  margin-bottom: 1rem;
+} */
+
+/* .margin {
+  margin: 2.5% 5%;
+} */
+
+nav {
+  margin: 0 !important;
+}
+
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-inline * {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content:  center;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.space-between {
+  /* display: flex; */
+  justify-content: space-between;
+  /* align-content: space-between; */
+  column-gap: 5rem;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-basis: 90%;
+  gap: 1rem;
+}
+
+#logo {
+  flex-basis: 10%;
+  margin-left: 1rem;
+  font-size: 2.6rem;
+}
+
+#about > section {
+  margin: 5%; /* 0 15% 5% 15% */
+}
+
+#menu nav ul {
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#location {
+  height: 95vh; 
+}
+
+#location > * {
+  padding: 2rem;
+}
+
+/******************************************
+/* Responsivity Adjustments
+/*******************************************/
+
+@media (min-width: 1000px) {
+  #menu nav ul {
+    column-gap: 5rem;
+    justify-content: center;
+  }
+}
+
+/******************************************
+/* TESTING
+/*******************************************/
+
+/* body * {
+  border: 1px white dotted;
+} */
