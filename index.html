@@ -21,13 +21,15 @@
 			<header class="contrast-bg-color"> 
 				<nav class="flex">
 					<span class="logo-font" id="logo">Rustic</span>
-					<ul class="flex">
+					<ul class="flex sidenav" id="mySidenav">
 						<!-- <li id="logo">Rustic</li> -->
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#menu">Menu</a></li>
-						<li><a href="#location">Location</a></li>
+						<li class="hide"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+						<li><a href="#home" onclick="closeNav()">Home</a></li>
+						<li><a href="#about" onclick="closeNav()">About Us</a></li>
+						<li><a href="#menu" onclick="closeNav()">Menu</a></li>
+						<li><a href="#location" onclick="closeNav()">Location</a></li>
 					</ul>
+					<div class="center hide"><img src="images/menu-icon.png" alt="menu icon" id="menu-icon"></div>
 				</nav>
 			</header>
 
@@ -41,6 +43,7 @@
 		<section class="margin flex flex-center" id="about">
 			<section>
 				<h4 class="center">About Us</h4>
+				<br>
 				<h2 class="center">What Sets Us Apart</h2>
 				<br>
 				<p>We source simple, wholesome ingredients of the highest quality from local, sustainable farmers. We take pride in providing healthy, delicious food that nourishes the soul. Come join us!</p>
@@ -110,7 +113,7 @@
 				<br><br>
 				<span><strong><a href="tel:+1123-456-7890">+1 123 456 7890</a></strong></span>
 			</div>
-			<section class="flex flex-row space-between">
+			<section class="flex hours flex-col"> <!-- flex-row space-between -->
 				<div class="flex-col line-height">
 					<span>Monday to Tuesday</span>
 					<br>
