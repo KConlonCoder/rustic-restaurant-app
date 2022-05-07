@@ -69,6 +69,7 @@ strong > a {
 
 .center {
   text-align: center;
+  align-items: center;
 }
 
 /******************************************
@@ -99,6 +100,7 @@ strong > a {
 
 #about > section {
   background-image: linear-gradient(to bottom, rgba(61,30,2,.7), rgba(0,0,0,.1));
+  padding: 2rem;
 }
 
 #menu {
@@ -251,7 +253,7 @@ main ul {
 }
 
 .closebtn {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 /******************************************
