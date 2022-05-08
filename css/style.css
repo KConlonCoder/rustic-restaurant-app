@@ -10,7 +10,7 @@ html {
 body {
   font-family: Courier New, Garamond, Georgia, 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
-  background: burlywood;
+  background: #DEB887;
   color: white;
 }
 
@@ -99,7 +99,8 @@ strong > a {
 }
 
 #about > section {
-  background-image: linear-gradient(to bottom, rgba(61,30,2,.7), rgba(0,0,0,.3));
+  background-image: 
+    linear-gradient(to bottom, rgba(61,30,2,.7), rgba(0,0,0,.3)); /* 222, 184, 135 */
   padding: 2rem;
 }
 
@@ -199,7 +200,7 @@ nav ul {
 #logo {
   flex-basis: 10%;
   margin-left: 1rem;
-  font-size: 2.6rem;
+  font-size: 3rem;
 }
 
 #about > section {
@@ -248,7 +249,7 @@ main ul {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: .5rem .5rem .5rem 2rem;
+  padding: .5rem .5rem .5rem .5rem;
   transition: 0.3s;
 }
 
