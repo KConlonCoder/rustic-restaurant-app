@@ -1,0 +1,365 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* App-specific CSS */
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    font-size: 62.5%; /* font-size 62.5% of 16px = 10px, default browser settings */
+    font-weight: normal;
+  }
+  
+  body {
+    font-family: Courier New, Garamond, Georgia, 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    background: #DEB887;
+    color: white;
+  }
+  
+  p, .line-height {
+    line-height: 3rem;
+  }
+  
+  nav {
+    padding: 0.5rem;
+  }
+  
+  h1 {  font-size: 6rem;}
+  h2 {  font-size: 4rem;}
+  /* h3 {  font-size: 1.872rem;} */
+  h4 {  font-size: 2.6rem;}
+  /* h5 {  font-size: 1.328rem;} */
+  /* h6 {  font-size: 1.072rem;} */
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid #FF452B; /* orangered */
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  .button, .button a {
+    color: white;
+    padding: .5rem;
+  }
+  
+  .button-decor {
+    background: orange;
+    color: white;
+    width: 5rem;
+  }
+  
+  h4, 
+  strong,
+  strong > a {
+    color: #FF452B;
+  }
+  
+  .button, .contrast-bg-color, .sidenav {
+    background: #B8860B;
+  }
+  
+  .logo-font, h1, h2 {
+    font-family: 'Amatic SC', cursive;
+  }
+  
+  .center {
+    text-align: center;
+    align-items: center;
+  }
+  
+  /******************************************
+  /* BACKGROUND STYLES
+  /*******************************************/
+  
+  #welcome {
+    background: white;
+    background-image: url("assets/atmosphere-table.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 95vh;
+  }
+  
+  #welcome * {
+    height: fit-content;
+  }
+  
+  #about {
+    background-image: url("assets/background-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 95vh;
+    padding: 2.5vh;
+  }
+  
+  #about > section {
+    background-image: 
+      linear-gradient(to bottom, rgba(61,30,2,.7), rgba(0,0,0,.3)); /* 222, 184, 135 */
+    padding: 2rem;
+  }
+  
+  #menu {
+    min-height: 90vh;
+    padding: 5vh 0;
+    text-align: center;
+  }
+  
+  #menu-breakfast img,
+  #menu-lunch img,
+  #menu-dinner img,
+  #menu-sides img {
+    height: 25vh;
+  }
+  
+  #menu-drinks img {
+    height: 40vh;
+  }
+  
+  #menu-breakfast,
+  #menu-lunch,
+  #menu-dinner,
+  #menu-sides,
+  #menu-drinks {
+    display: none;
+  }
+  
+  #menu-breakfast {
+    display: inline;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  main img {
+    height: 100%;
+  }
+  
+  nav {
+    margin: 0 !important;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-inline * {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:  center;
+    flex-wrap: wrap;
+  }
+  
+  .flex-center {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .flex-end {
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+    column-gap: 5rem;
+  }
+  
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-basis: 90%;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  #logo {
+    flex-basis: 10%;
+    margin-left: 1rem;
+    font-size: 3rem;
+  }
+  
+  #about > section {
+    margin: 5%; /* 0 15% 5% 15% */
+  }
+  
+  main ul {
+    column-gap: 2rem;
+  }
+  
+  #menu nav ul {
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #location {
+    min-height: 95vh; 
+  }
+  
+  #location > * {
+    padding: 2rem;
+  }
+  
+  .hours {
+    justify-content: space-between;
+    row-gap: 3rem;
+  }
+  
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 2rem 0; /* Place content down from the top */
+    margin: 3rem 0; /* Place content down from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: .5rem .5rem .5rem .5rem;
+    transition: 0.3s;
+  }
+  
+  .closebtn {
+    font-size: 3rem;
+  }
+  
+  /******************************************
+  /* Responsivity Adjustments
+  /*******************************************/
+  
+  @media (min-width: 1000px) {
+  
+    .hide {
+      display: none;
+    }
+  
+    .sidenav {
+      position: unset;
+      right: unset;
+      top:unset;
+      z-index: unset;
+      overflow-x: unset;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0; 
+    }
+    
+    #mySidenav {
+      width: 100%;
+    }
+    
+    #menu nav ul {
+      column-gap: 5rem;
+      justify-content: center;
+    }
+  
+    .hours {
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 5rem;
+    }
+  
+    main ul {
+      column-gap: 6rem;
+    }
+  
+  }
+  
+  /******************************************
+  /* TESTING
+  /*******************************************/
+  
+  /* body * {
+    border: 1px white dotted;
+  } */
