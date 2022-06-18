@@ -6,7 +6,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
+  // { path: '', redirectTo: '/welcome', pathMatch: 'full' },
+  { path: '', component: WelcomeComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },
