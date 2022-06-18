@@ -5,9 +5,9 @@ import { LocationComponent } from './components/location/location.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full' }, 
+const routes: Routes = [ 
   { path: 'welcome', component: WelcomeComponent },
+  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'location', component: LocationComponent }
