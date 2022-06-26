@@ -1,6 +1,3 @@
-[build]
-  publish = "dist/rustic-app"
-  command = "ng deploy --base-href=rustic-app"
 [[redirects]]
   from = "/*"
   to = "/index.html"
