@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { LocationComponent } from './components/location/location.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [ 
   { path: 'welcome', component: WelcomeComponent },
@@ -17,4 +18,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
+export const routingComponents = [WelcomeComponent, AboutComponent, MenuComponent, LocationComponent, NavComponent]
