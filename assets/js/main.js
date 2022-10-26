@@ -3,9 +3,7 @@
 // MOBILE NAVIGATION
 ///////////////////////////////////////
 /* Set the width of the side navigation to 250px */
-window.onload=function(){
-  document.getElementById("menu-icon").addEventListener('click', openNav)
-}
+document.getElementById("menu-icon").addEventListener('click', openNav)
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
