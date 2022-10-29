@@ -16,7 +16,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    onSameUrlNavigation: 'reload' // Added to handle page refreshes
+    onSameUrlNavigation: 'ignore' // Added to handle page refreshes
   })],
   exports: [RouterModule]
 })
