@@ -7,8 +7,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [ 
-  { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
+  { path: 'welcome', component: WelcomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'location', component: LocationComponent }
